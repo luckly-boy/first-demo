@@ -190,7 +190,9 @@
       }
     },
     mounted(){
-      this.getad()
+      if(this.$route.params.kc){
+        this.getad()
+      }
     }
   };
 </script>
